@@ -16,4 +16,3 @@ Laravel is accessible, yet powerful, providing tools needed for large, robust ap
 ## submit by rootchen
 <p>Finsh Static_pages and signup_pages</p>
 <p>Time 2018-7-23</p> 
-<hr/>
