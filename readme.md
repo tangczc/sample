@@ -19,4 +19,3 @@ Laravel is accessible, yet powerful, providing tools needed for large, robust ap
 ## submit by rootchen
 <p>create Models</p>
 <p>Time 2018-7-24</p>
- 
