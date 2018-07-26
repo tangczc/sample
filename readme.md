@@ -24,3 +24,7 @@ Laravel is accessible, yet powerful, providing tools needed for large, robust ap
 ## submit by rootchen
 <p>Finish user signup</p>
 <p>Time 2018-7-25</p> 
+
+## submit by rootchen
+<p>Finish login and logout</p>
+<p> Time 2018-7-26</p>
