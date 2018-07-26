@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Models\User;
-
+use Auth;
 class UsersController extends Controller
 {
     public function signUp(){
@@ -28,7 +28,7 @@ class UsersController extends Controller
             'email' => $request->email,
             'password' => bcrypt($request->password),
         ]);
-
+        Auth::login($user);
         session()->flash('success', '欢迎加入我们~');
         return redirect()->route('users.show', [$user]);
     }
