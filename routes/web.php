@@ -23,4 +23,5 @@ Route::delete('logout','SessionsController@destroy') -> name('logout');
 Route::get('/users/{user}/edit','UsersController@edit') -> name('users.edit');
 Route::PUT('/users/{user}','UsersController@update') -> name('users.update');
 Route::get('/users','UsersController@index') -> name('users.index');
+Route::delete('users/{user}','UsersController@destroy') -> name('users.destroy');
 
