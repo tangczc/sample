@@ -20,4 +20,7 @@ Route::get('/users/{user}', 'UsersController@show')->name('users.show');
 Route::get('login','SessionsController@create') -> name('login');
 Route::post('login','SessionsController@store') -> name('login');
 Route::delete('logout','SessionsController@destroy') -> name('logout');
+Route::get('/users/{user}/edit','UsersController@edit') -> name('users.edit');
+Route::PUT('/users/{user}','UsersController@update') -> name('users.update');
+Route::get('/users','UsersController@index') -> name('users.index');
 
