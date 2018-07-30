@@ -29,6 +29,10 @@ Laravel is accessible, yet powerful, providing tools needed for large, robust ap
 <p>Finish login and logout</p>
 <p>Time 2018-7-26</p>
 
-## submit by root
+## submit by rootchen
 <p>Finish user edit, update, destroy actions</p>
 <p>Time 2018-7-27</p>
+
+##submit by rootchen
+<p>Add user statuses</p>
+<p>Time 2018-7-29</p>
