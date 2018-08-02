@@ -13,32 +13,5 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
 Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
-## submit by rootchen
-<p>Finish Static_pages and signup_pages</p>
-<p>Time 2018-7-23</p>
 
-## submit by rootchen
-<p>create Models</p>
-<p>Time 2018-7-24</p>
-
-## submit by rootchen
-<p>Finish user signup</p>
-<p>Time 2018-7-25</p> 
-
-## submit by rootchen
-<p>Finish login and logout</p>
-<p>Time 2018-7-26</p>
-
-## submit by rootchen
-<p>Finish user edit, update, destroy actions</p>
-<p>Time 2018-7-27</p>
-
-## submit by rootchen
-<p>Add user statuses</p>
-<p>Time 2018-7-29</p>
-
-## submit by rootchen
-<p>Add user following</p>
-<p>Time 2018-8-1</p>
-
-# This Project has Finished
+This item  come from Laravel China;
