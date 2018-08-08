@@ -10,6 +10,10 @@ use Auth;
 
 class StaticPagesController extends Controller
 {
+    /**
+     * @pram $feed_items
+     * return view home.blade.php
+     */
     public function home(){
         $feed_items = [];
         if (Auth::check()) {
@@ -18,9 +22,17 @@ class StaticPagesController extends Controller
 
         return view('static_pages/home', compact('feed_items'));
     }
+    /**
+     * 
+     * return view help.blade.php
+     */
     public function help(){
         return view('static_pages/help');
     }
+    /**
+     * 
+     * return view about.blade.php
+     */
     public function about(){
         return view('static_pages/about');
     }
