@@ -61,7 +61,7 @@ class UsersController extends Controller
         }
         $user -> update($data);
         session() -> flash('success','修改成功');
-        return redrict() -> route('users.show', $user -> id);
+        return redirect() -> route('users.show', $user -> id);
     }
     public function index(){
         $users = User::paginate(10);
