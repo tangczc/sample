@@ -2,7 +2,7 @@
 
 ## Thinks for Laravel china lessions
 
-##aoubt this project
+## aoubt this project
 
 <p>All routes in routes/web.php</p>
 
