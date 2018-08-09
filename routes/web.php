@@ -16,6 +16,7 @@ Route::get('/','StaticPagesController@home') -> name('home');
 Route::get('help','StaticPagesController@help') -> name('help');
 //关于页面路由
 Route::get('about','StaticPagesController@about')-> name('about');
+//跳转到注册界面
 Route::get('signup','UsersController@signUp') -> name('users.signup');
 Route::post('/users', 'UsersController@store')->name('users.store');
 Route::get('/users/{user}', 'UsersController@show')->name('users.show');
