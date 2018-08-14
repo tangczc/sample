@@ -19,6 +19,10 @@ class UsersController extends Controller
         ]);
     }
     public function signUp(){
+        /**
+         * 跳转到注册界面
+         * return view sign
+         */
         return view('users.sign_up');
     }
     public function show(User $user){
