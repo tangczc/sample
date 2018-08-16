@@ -25,6 +25,10 @@ class UsersController extends Controller
          */
         return view('users.sign_up');
     }
+    /**
+     * 通过排序分组把用户分组显示到页面
+     * return view
+     */
     public function show(User $user){
         $statuses = $user->statuses() -> orderBy('created_at','desc') -> paginate(30);
         return view('users.show', compact('user','statuses'));

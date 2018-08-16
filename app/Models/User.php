@@ -27,8 +27,14 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+    /**
+     * $size 默认头像尺寸
+     * return 用户头像
+     */
     public function gravatar($size = '100'){
+        //获取用户邮箱去掉后面空白部分然后把邮箱转换为小写通过md5加密
         $hash = md5(strtolower(trim($this->attributes['email'])));
+        //返回用户头像
         return "http://www.gravatar.com/avatar/$hash?s=$size";
     }
     public static function boot(){
