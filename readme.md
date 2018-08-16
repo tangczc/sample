@@ -2,11 +2,11 @@
 
 ## Thinks for Laravel china lessions
 
-## aoubt this project
+## about this project
 
 <p>All routes in routes/web.php</p>
 
-### aoubt views
+### about views
 
 <h3>All veiw in resources/view<h3>
 <p>layouts have some bases vew ,others view can extend them</p>
@@ -14,4 +14,8 @@
 <p>static_pages have html file</p>
 <p>users have all about users file</p>
 <p>sessions have login file</p>
+
+### about controller
+
+<p></p>
 
