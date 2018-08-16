@@ -8,7 +8,8 @@
 
 ### about views
 
-<h3>All veiw in resources/view<h3>
+<h3>All veiw in resources/view<h3>\
+
 <p>layouts have some bases vew ,others view can extend them</p>
 <p>shared have some info view,others view`s info in this view</p>
 <p>static_pages have html file</p>
