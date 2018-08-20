@@ -113,4 +113,8 @@ class UsersController extends Controller
         $title = '粉丝';
         return view('users.show_follow', compact('users', 'title'));
     }
+
+    public function author(){
+        return view('static_pages.author');
+    }
 }
