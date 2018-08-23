@@ -30,16 +30,26 @@ class UsersController extends Controller
      * return view
      */
     public function show(User $user){
+        //分页排序
         $statuses = $user->statuses() -> orderBy('created_at','desc') -> paginate(30);
+        //返回视图
         return view('users.show', compact('user','statuses'));
     }
+    /**
+    *登陆
+    *
+    */
     public function store(Request $request){
+        //验证规则
         $this->validate($request, [
+            //name不能为空大于50
             'name' => 'required|max:50',
+            //email不能为空zaiusers上必须唯一格式是email最大长度为255
             'email' => 'required|email|unique:users|max:255',
+            //password不能为空最小为6
             'password' => 'required|confirmed|min:6'
         ]);
-
+        //
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
