@@ -62,10 +62,19 @@ class UsersController extends Controller
        // return redirect()->route('users.show', [$user]);
        return redirect('/');
     }
+    /**
+    *
+    * 跳转用户修改页面
+    * return view
+    * 
+    */
     public function edit(User $user){
         $this -> authorize('update',$user);
         return view('users.edit',compact('user'));
     }
+    /**
+    * 修改用户信息
+    */
     public function update(User $user,Request $request){
         $this -> validate($request, [
             'name' => 'required|max:50',
@@ -81,16 +90,26 @@ class UsersController extends Controller
         session() -> flash('success','修改成功');
         return redirect() -> route('users.show', $user -> id);
     }
+    /**
+    * 分页展示所有用户
+    * return view
+    */
     public function index(){
         $users = User::paginate(10);
         return view('users.index',compact('users'));
     }
+    /**
+    * 删除用户
+    */
     public function destroy(User $user){
         $this -> authorize('destroy',$user);
         $user->delete();
         session() -> flash('success','成功删除用户');
         return back();
     }
+    /**
+    * 确认邮件
+    */
     protected function sendEmailConfirmationTo($user){
         $view = 'emails.confirm';
         $data = compact('user');
