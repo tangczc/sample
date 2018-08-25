@@ -11,6 +11,7 @@ use Mail;
 class UsersController extends Controller
 {
     public function __construct(){
+        //过滤器
         $this -> middleware('auth',[
             'except' => ['show','signUp','store','index','confirmEmail']
         ]);
