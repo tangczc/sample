@@ -10,9 +10,18 @@ class SessionsController extends Controller
     public function __construct(){
         $this -> middleware('guest',['only' => ['create']]);
     }
+    /**
+    *跳转登录界面
+    *return view
+    */
     public function create(){
         return view('sessions.create');
     }
+    /**
+    *登陆操作
+    *
+    *
+    */
     public function store(Request $request){
         $credentials = $this->validate($request, [
             'email' => 'required|email|max:255',
@@ -32,6 +41,11 @@ class SessionsController extends Controller
             return redirect() -> back();
         }
     }
+    /**
+    *
+    *推出登陆
+    *
+    */
     public function destroy(){
         Auth::logout();
         session() -> flash('success', '您已经成功推出登陆');

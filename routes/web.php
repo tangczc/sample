@@ -18,9 +18,13 @@ Route::get('help','StaticPagesController@help') -> name('help');
 Route::get('about','StaticPagesController@about')-> name('about');
 //跳转到注册界面
 Route::get('signup','UsersController@signUp') -> name('users.signup');
+//登陆操作路由
 Route::post('/users', 'UsersController@store')->name('users.store');
+//展示所有用户路由
 Route::get('/users/{user}', 'UsersController@show')->name('users.show');
+
 Route::get('login','SessionsController@create') -> name('login');
+
 Route::post('login','SessionsController@store') -> name('login');
 Route::delete('logout','SessionsController@destroy') -> name('logout');
 Route::get('/users/{user}/edit','UsersController@edit') -> name('users.edit');
